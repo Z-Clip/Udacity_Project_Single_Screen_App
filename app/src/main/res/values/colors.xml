@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <!-- Solid black and white -->
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
+
+    <!-- Solid color palette -->
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="lightPrimary">#BBDEFB</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="textAndIcons">#FFFFFF</color>
+    <color name="colorAccent">#9E9E9E</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+    <color name="dividerColor">#BDBDBD</color>
+
+    <!-- 75% transparent color palette -->
+    <color name="transparentColorPrimaryDark">#BF1976D2</color>
+    <color name="transparentLightPrimary">#BFBBDEFB</color>
+    <color name="transparentColorPrimary">#BF2196F3</color>
+    <color name="transparentTextAndIcons">#BFFFFFFF</color>
+    <color name="transparentColorAccent">#BF9E9E9E</color>
+    <color name="transparentPrimaryText">#BF212121</color>
+    <color name="transparentSecondaryText">#BF757575</color>
+    <color name="transparentDividerColor">#BFBDBDBD</color>
 </resources>
