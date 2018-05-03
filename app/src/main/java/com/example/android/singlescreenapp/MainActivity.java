@@ -30,6 +30,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void phoneIntent(View view) {
+        Intent placeCall = new Intent(Intent.ACTION_DIAL);
+        placeCall.setData(Uri.parse("tel:5555555555"));
+        if (placeCall.resolveActivity(getPackageManager()) != null) {
+            startActivity(placeCall);
+        } else {
+            Toast.makeText(this,"Could not launch phone app.", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void mapIntent(View view) {
