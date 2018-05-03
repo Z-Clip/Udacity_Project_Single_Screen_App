@@ -8,6 +8,14 @@
     android:padding="8dp"
     android:background="@color/lightPrimary">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/water_photo_2"
+        android:layout_above="@id/button_view_group"
+        android:layout_below="@id/header"/>
+
     <TextView
         android:id="@+id/header"
         android:layout_width="match_parent"
@@ -15,33 +23,38 @@
         style="@style/HeaderText"
         android:text="@string/header_text" />
 
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/header"
-        android:layout_above="@id/descriptive_text"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/water_photo"/>
-
-    <TextView
-        android:id="@+id/descriptive_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/PrimaryText"
-        android:layout_above="@id/contact_information"
-        android:text="@string/body_text"/>
-
-    <TextView
-        android:id="@+id/contact_information"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/PrimaryText"
+        android:layout_height="match_parent"
         android:layout_above="@id/button_view_group"
+        android:layout_below="@id/header"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/contact_info"/>
+        android:orientation="horizontal">
+
+            <TextView
+                android:layout_margin="8dp"
+                android:id="@+id/descriptive_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/PrimaryText"
+                android:background="@drawable/landscape_text_view"
+                android:text="@string/body_text"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_margin="8dp"
+                android:id="@+id/contact_information"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/PrimaryText"
+                android:background="@drawable/landscape_text_view"
+                android:text="@string/contact_info"
+                android:textStyle="bold"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/button_view_group"
