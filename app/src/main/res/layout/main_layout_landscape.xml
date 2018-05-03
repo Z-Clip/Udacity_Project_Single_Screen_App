@@ -40,8 +40,7 @@
                 android:layout_weight="1"
                 style="@style/PrimaryText"
                 android:background="@drawable/landscape_text_view"
-                android:text="@string/body_text"
-                android:textStyle="bold"/>
+                android:text="@string/body_text" />
 
             <TextView
                 android:layout_margin="8dp"
@@ -51,8 +50,7 @@
                 android:layout_weight="1"
                 style="@style/PrimaryText"
                 android:background="@drawable/landscape_text_view"
-                android:text="@string/contact_info"
-                android:textStyle="bold"/>
+                android:text="@string/contact_info"/>
 
     </LinearLayout>
 
