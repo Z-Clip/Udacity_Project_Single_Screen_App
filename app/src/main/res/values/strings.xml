@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Single Screen App</string>
+    <string name="header_text">ACME Dehydrated Water Co.</string>
+    <string name="body_text">\nWe here at ACME Dehydrated Water Co have worked hard to apply the wonders of dehydration technology to H2O. A single liter of H2O weighs 1 kg (2.2 lbs), but our patented dehydration technology can reduce its weight to nearly 0 kg. We hope you are as excited as we are, and we hope to see your investment capital rolling in soon!\n</string>
+    <string name="contact_info">ACME Dehydrated Water Co.\n\nBeatty Junction, CA 92328\n555-555-5555\nGiveUsYourMoney@hotmail.com</string>
     <string name="email_button">Email Us</string>
     <string name="phone_button">Call Us</string>
     <string name="map_button">Get Directions</string>
