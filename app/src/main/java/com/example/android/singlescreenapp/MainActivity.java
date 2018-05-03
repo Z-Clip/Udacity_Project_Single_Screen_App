@@ -40,5 +40,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void mapIntent(View view) {
+        Uri location = Uri.parse("geo:36.588013,-116.943343");
+        Intent showMap = new Intent(Intent.ACTION_VIEW,location);
+        showMap.setPackage("com.google.android.apps.maps");
+        if (showMap.resolveActivity(getPackageManager()) != null) {
+            startActivity(showMap);
+        }
     }
 }
